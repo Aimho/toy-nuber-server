@@ -54,3 +54,8 @@
 - typeorm method 설명
   - BeforeInsert: 새로운 object를 만들기 전에 불려지는 method
   - BeforeUpdate: object를 update 하기 전에 불려지는 method
+
+# Twilio
+
+- API로 SMS 메시지, 전화, 영상통화 등을 해줄 수 있게 도와주는 툴
+- 여기서는 SMS 메시지 (전화번호 인증)을 위해서 사용함
