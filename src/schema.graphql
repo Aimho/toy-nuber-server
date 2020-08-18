@@ -4,6 +4,9 @@ type Chat {
   participants: [User]!
   createdAt: String!
   updatedAt: String
+}
+
+type Message {
   id: Int!
   text: String!
   chat: Chat!
@@ -35,6 +38,8 @@ type Ride {
   price: Float!
   distance: String!
   duration: String!
+  driver: User!
+  passenger: User!
   createdAt: String!
   updatedAt: String
 }
@@ -57,6 +62,11 @@ type User {
   lastLng: Float
   lastLat: Float
   lastOrientation: Float
+  chat: Chat
+  message: [Message]
+  verifications: [Verifications]
+  ridesAsPassenger: [Ride]
+  ridesAsDriver: [Ride]
   createdAt: String!
   updatedAt: String
 }
@@ -65,12 +75,13 @@ type Query {
   user: User
 }
 
-type Verification {
+type Verifications {
   id: Int!
   target: String!
   payload: String!
   key: String!
   used: Boolean!
+  user: User!
   createdAt: String!
   updatedAt: String
 }
