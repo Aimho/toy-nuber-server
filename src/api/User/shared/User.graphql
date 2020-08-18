@@ -16,6 +16,8 @@ type User {
   lastLng: Float
   lastLat: Float
   lastOrientation: Float
+  chat: chat
+  message: [Message]
   createdAt: String!
   updatedAt: String
 }

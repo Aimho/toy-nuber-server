@@ -1,3 +1,17 @@
+type Chat {
+  id: Int!
+  message: [Message]!
+  participants: [User]!
+  createdAt: String!
+  updatedAt: String
+  id: Int!
+  text: String!
+  chat: Chat!
+  user: User!
+  createdAt: String!
+  updatedAt: String
+}
+
 type Place {
   id: Int!
   name: String!
@@ -6,7 +20,7 @@ type Place {
   address: String!
   isFav: Boolean!
   createdAt: String!
-  updatedAt: String!
+  updatedAt: String
 }
 
 type Ride {
@@ -22,7 +36,7 @@ type Ride {
   distance: String!
   duration: String!
   createdAt: String!
-  updatedAt: String!
+  updatedAt: String
 }
 
 type User {
