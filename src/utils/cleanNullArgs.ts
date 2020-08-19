@@ -1,4 +1,4 @@
-const cleanNullArgs = (args: any): {} => {
+const cleanNullArgs = (args: object): object => {
   const notNull = {};
   Object.keys(args).forEach((key) => {
     if (args[key] !== null) {
