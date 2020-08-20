@@ -64,3 +64,10 @@
 
 - API로 email 전송을 도와주는 툴
 - 유료로 사용하는 것이 아니면 지정된 domain에서 가입한 email 외 mail 전송 불가능함
+
+# Subscription
+
+- Query랑 비슷하면서 describe도 할 수 있는 것
+- subscription 서버는 pubSub라 불리는 것으로 부터 가져옴
+- subscriber 패턴 같은 것이 있음
+- `graphql-yoga`에 PubSub가 딸려있으나 이건 데모버전에서만 사용해야 하고 제품버전에서는 `Redies`나 `Memcached` 같은걸 써야 함
