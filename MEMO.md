@@ -71,3 +71,5 @@
 - subscription 서버는 pubSub라 불리는 것으로 부터 가져옴
 - subscriber 패턴 같은 것이 있음
 - `graphql-yoga`에 PubSub이 딸려있으나 이건 데모버전에서만 사용해야 하고 제품버전에서는 `Redies`나 `Memcached` 같은걸 써야 함
+- [질문] 왜 제품버전에서는 PubSub을 사용하면 안되는가?
+  - https://nomadcoders.co/nuber/lectures/975/comments/6884
