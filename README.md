@@ -77,3 +77,4 @@ Server for the (N)Uber Clone Course on Nomad Academy. GraphQL, Typescript, NodeJ
 - `graphql-yoga`에 PubSub이 딸려있으나 이건 데모버전에서만 사용해야 하고 제품버전에서는 `Redies`나 `Memcached` 같은걸 써야 함
 - [질문] 왜 제품버전에서는 PubSub을 사용하면 안되는가?
   - https://nomadcoders.co/nuber/lectures/975/comments/6884
+  - Because we should use other more stable products like Redis or RabbitMQ that are more well suited for these kind of stuff.
